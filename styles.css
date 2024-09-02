@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    background-color: #e0f7fa;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.day {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.trophy {
+    font-size: 24px;
+    color: #ffd700;
+    display: none;
+}
+
+.box.completed {
+    background-color: #dcedc8;
+}

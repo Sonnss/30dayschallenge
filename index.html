@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Generating 30 boxes -->
+        <script>
+            for (let i = 1; i <= 30; i++) {
+                document.write(`
+                    <div class="box" onclick="completeChallenge(this)">
+                        <div class="day">Day ${i}</div>
+                        <div class="trophy">🏆</div>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
