@@ -7,18 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Generating 30 boxes -->
-        <script>
-            for (let i = 1; i <= 30; i++) {
-                document.write(`
-                    <div class="box" onclick="completeChallenge(this)">
-                        <div class="day">Day ${i}</div>
-                        <div class="trophy">🏆</div>
-                    </div>
-                `);
-            }
-        </script>
+    <button id="start-over" onclick="resetChallenge()">Start Over</button>
+    <div class="container" id="challenge-container"></div>
+    <div id="congratulations" class="hidden">
+        <h2>Congratulations! You completed the 30-day challenge!</h2>
     </div>
     <script src="script.js"></script>
 </body>
